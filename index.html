@@ -2,19 +2,23 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF8" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style-home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;900&family=Karla:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <title>Barbearia Alura</title>
   </head>
 
   <body>
     <header>
-      <div>
-        <h1>
-          <img
-            src="./imagens-barbearia/logo.png"
-            alt="logo da barbearia Alura"
-          />
-        </h1>
-
+      <div class="box">
+        <img
+          id="logo"
+          src="./imagens-barbearia/logo.png"
+          alt="logo da barbearia Alura"
+        />
         <nav>
           <ul>
             <li><a href="./index.html">Home</a></li>
@@ -23,30 +27,30 @@
           </ul>
         </nav>
       </div>
-      <h1>Barbearia Alura</h1>
     </header>
 
+    <div class="title-box">
+      <h1 class="title">Barbearia Alura</h1>
+    </div>
     <section>
       <img
-        src="./imagens-barbearia/banner.jpg"
+        id="banner"
+        src="./imagens-barbearia/banner.png"
         alt="banner da barbearia Alura"
       />
-      <div>
-        <h2>Sobre a Barbearia</h2>
+    </section>
+    <section>
+      <div class="principal">
+        <h2 class="title-center">Sobre a Barbearia</h2>
         <p>
-          Localizada no coração da cidade a
-          <strong>Barbearia Alura</strong> traz para o mercado o que há de
-          melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura
-          já é destaque na cidade e conquista novos clientes a cada dia.
+          Localizada no coração da cidade a Barbearia Alura traz para o mercado
+          o que há de melhor para o seu cabelo e barba. Fundada em 2019, a
+          Barbearia Alura já é destaque na cidade e conquista novos clientes a
+          cada dia.
         </p>
         <p>
           Nossa missão é
-          <em
-            ><strong
-              >"Proporcionar auto-estima e qualidade de vida aos
-              clientes"</strong
-            ></em
-          >
+          <em>"Proporcionar auto-estima e qualidade de vida aos clientes"</em>
         </p>
         <p>
           Oferecemos profissionais experientes e antenados às mudanças no mundo
@@ -57,17 +61,18 @@
     </section>
 
     <section>
-      <div>
-        <h3>Benefícios</h3>
+      <div class="benefits">
+        <h3 class="title-center">Benefícios</h3>
 
-        <ul>
-          <li>Atendimento ao cliente</li>
-          <li>Espaço diferenciado</li>
-          <li>Localização</li>
-          <li>Profissionais qualificados</li>
+        <ul class="list">
+          <li class="list-item">✶ Atendimento ao cliente</li>
+          <li class="list-item">✶ Espaço diferenciado</li>
+          <li class="list-item">✶ Localização</li>
+          <li class="list-item">✶ Profissionais qualificados</li>
         </ul>
 
         <img
+          id="image-benefits"
           src="./imagens-barbearia/beneficios.jpg"
           alt="benefícios da barbearia Alura"
         />
@@ -75,8 +80,12 @@
     </section>
 
     <footer>
-      <img src="./imagens-barbearia/logo-branco.png" alt="logo de rodapé" />
-      <p>&copy; Copyright Barbearia Alura</p>
+      <img
+        id="logo-bottom"
+        src="./imagens-barbearia/logo-branco.png"
+        alt="logo de rodapé"
+      />
+      <p class="copyright">&copy; Copyright Barbearia Alura</p>
     </footer>
   </body>
 </html>
