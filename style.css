@@ -130,3 +130,92 @@ footer {
   color: #ffffff;
   font-size: 13px;
 }
+
+form {
+  margin: 40px 0px;
+  font-size: 20px;
+}
+
+form label {
+  margin: 40px 0 20px 0;
+  display: block;
+  font-family: "Fira";
+  font-weight: bold;
+}
+
+.input-pattern {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contact {
+  margin-top: 40px;
+}
+.contact legend {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.radio {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-weight: lighter;
+}
+
+.contact-time {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.option-time {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 20px 0;
+  padding: 15px 0;
+  width: 40%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.sent {
+  width: 40%;
+  padding: 15px 0;
+  background: #994b03;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  transition: 1s all;
+}
+
+.sent:hover {
+  background: #bdbdbd;
+  transform: scale(1.2);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background: #555555;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
