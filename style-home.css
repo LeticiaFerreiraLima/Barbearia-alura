@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(189, 189, 189);
+  background-color: #bdbdbd;
 }
 
 header {
@@ -115,7 +115,11 @@ h3 {
 .list-item {
   text-transform: uppercase;
   font-weight: bold;
-  padding: 5px;
+  padding: 10px;
+}
+
+.list li:hover {
+  color: #994b03;
 }
 
 #image-benefits {
