@@ -1,3 +1,4 @@
+
 header {
   background-color: #bdbdbd;
   padding: 20px 0;
@@ -58,14 +59,18 @@ nav a:hover {
 
 .banner {
   width: 100%;
-  heigth: auto;
+  height: auto;
   border: 1px solid black;
 }
 
 .principal {
-  background-color: #000000;
-  color: white;
-  width: 100%;
+  margin: 0 auto;
+  color: #000000;
+  background-color: #bdbdbd;
+}
+
+.sections{
+  background: linear-gradient(#bdbdbd, white);
 }
 
 .title-center {
@@ -75,7 +80,14 @@ nav a:hover {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
-  clear: left;
+  font-weight: bold;
+}
+
+.title-center:before{
+  content: "[ ";
+}
+.title-center::after{
+  content: " ]"
 }
 
 .principal p {
@@ -88,6 +100,10 @@ nav a:hover {
   font-family: "Fira";
 }
 
+.principal p::first-line{
+  font-weight: bold;
+}
+
 .principal p em {
   font-style: italic;
   color: #994b03;
@@ -95,44 +111,80 @@ nav a:hover {
 
 .utensilios {
   margin: 0 20px 20px 20px;
-  width: 12%;
+  width: calc(100% / 7);
   float: left; /*Float - A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr, onde textos e elementos em linha irão se posicionar ao seu redor.  */
 }
-h3 {
-  font-weight: bold;
+
+
+.content-benefits {
+  width: 680px;
+  margin: 0 auto
+  ;
 }
 
-.benefits {
-  position: relative;
+.content-benefits p {
+  width: 680px;
+  margin: 0 0 2em;
   font-family: "Fira";
-  font-size: 15px;
-  padding: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 
-.list {
+.list-benefits {
   display: inline-block;
+  width: 40%;
   vertical-align: top;
-  padding-left: 100px;
-  margin-right: 15%;
-  margin-top: 30px;
 }
 
 .list-item {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 10px;
+  font-family: "Fira";
+  font-size: 20px;
+  line-height: 1.5em;
 }
 
-.list li:hover {
+.list-benefits li:hover {
   color: #994b03;
 }
 
-.image-benefits {
-  width: 50%;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  border: 2px solid rgb(0, 0, 0);
+.list-item:nth-child(n) {
+  font-weight: bold;
 }
+/*pseudo classes -> first, last, nth-child(). (2n) inclui todos os números pares*/
+
+.list-item:before{
+  content: "✶"
+}
+
+/*pseudo elementos*/
+
+.image-benefits {
+  width: 60%;
+}
+
+.map {
+  width: 980px;
+  margin: 0 auto;
+  padding: 3em 0;
+  font-family: "Fira";
+  font-size: 20px;
+}
+
+.map p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.video {
+  width: 560px;
+  margin: 2em auto;
+  opacity: 0.5;
+}
+
+.video:hover{
+  opacity: 1;
+  transition: 1s;
+}
+
 
 .products-alura {
   width: 940px;
@@ -150,6 +202,7 @@ h3 {
   box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 10px;
+  box-shadow: 1px 5px 5px #000000, -1px 5px 5px #000000;
 }
 
 .products-alura li:hover {
@@ -187,6 +240,10 @@ h3 {
 
 .products-alura li:hover .products-price {
   color: #994b03;
+}
+
+.products-img{
+  box-shadow: 5px 5px 5px #555555;
 }
 
 footer {
@@ -299,20 +356,6 @@ th {
   padding: 8px 15px;
 }
 
-.map {
-  width: 980px;
-  margin: 0 auto;
-  padding: 3em 0;
-  font-family: "Fira";
-  font-size: 20px;
-}
 
-.map p {
-  margin: 0 0 2em;
-  text-align: center;
-}
 
-.video {
-  width: 560px;
-  margin: 2em auto;
-}
+
