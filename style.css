@@ -4,9 +4,6 @@ header {
   padding: 20px 0;
 }
 
-.logo {
-  width: 12%;
-}
 
 .box {
   position: relative;
@@ -123,7 +120,6 @@ nav a:hover {
 }
 
 .content-benefits p {
-  width: 680px;
   margin: 0 0 2em;
   font-family: "Fira";
   font-size: 20px;
@@ -213,14 +209,14 @@ nav a:hover {
   border-color: #994b03;
 }
 
-.products-alura h2 {
+.products-alura h3 {
   font-family: "Fira";
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.products-alura li:hover h2 {
+.products-alura li:hover h3 {
   font-size: 21px;
   font-family: bold;
   color: #994b03;
@@ -356,6 +352,49 @@ th {
   padding: 8px 15px;
 }
 
+@media screen and (max-width:480px){
 
+  .box , .principal p , .map , .content-benefits, .video {
+    width: auto;
+  }
+  
+  nav{
+    position: static;
+    width: 100%;
+  }
 
+  .list-benefits, .image-benefits{
+    width: 100%;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .products-alura{
+    width: 100%;
+  }
+  .products-alura li{
+  display: block;
+  width: 90%;
+  margin: 0 auto 20px;
+  }
+
+  .main-width {
+  width: 100%;
+  }
+
+  form{
+  text-align: center;
+  }
+  .input-pattern{
+  width: 70%;
+  margin: 0 auto;;
+  }
+
+  table{
+    width: 50%;
+    margin: 0 auto 10px;
+  }
+}
 
